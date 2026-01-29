@@ -1,0 +1,5 @@
+                dim_customer
+                     |
+                dim_product
+                     |
+dim_date —— fact_sales —— dim_region
