@@ -3,3 +3,10 @@
                 dim_product
                      |
 dim_date —— fact_sales —— dim_region
+--Relatinships--
+| From                    | To                        | Type      |
+| ----------------------- | ------------------------- | --------- |
+| fact_sales.customer_key | dim_customer.customer_key | Many-to-1 |
+| fact_sales.product_key  | dim_product.product_key   | Many-to-1 |
+| fact_sales.date_key     | dim_date.date_key         | Many-to-1 |
+| fact_sales.region_key   | dim_region.region_key     | Many-to-1 |
